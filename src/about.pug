@@ -1,0 +1,49 @@
+extends includes/base
+block vars
+	-var pageName = 'about-page'
+	-var pageTitle = 'О компании | RentSoft'
+	-var pageDescription = 'Компания Ренсофт имеет богатый опыт в сфере разработок и поставок самых различных ИТ-систем'
+	-var pageKeywords = 'RentSoft'
+block content
+		main.main
+			section.company
+				.company__content
+					.company__container.container
+						.company__inner
+							.company__text
+								h1.h2.company__header О&nbsp;компании
+								p Компания Ренсофт имеет богатый опыт в&nbsp;сфере разработок и&nbsp;поставок самых различных ИТ-систем.
+								p Более 13 лет на&nbsp;рынке мы оказываем услуги известным на&nbsp;рынке российским компаниям.
+								picture
+									source(srcset="images/rentsoft-about-02.webp" type="image/webp")
+									img(src="images/rentsoft-about-02.jpg", alt="О компании", aria-hidden="true")
+								p Мы знаем все о&nbsp;современных технологиях, способах их&nbsp;внедрения и&nbsp;интеграции с&nbsp;популярными софтами и&nbsp;платформами.
+				.company__image
+					picture
+						source(srcset="images/rentsoft-about-02.webp" type="image/webp")
+						img(src="images/rentsoft-about-02.jpg", alt="О компании", aria-hidden="true")
+			section.clients
+				.clients__block
+					.clients__container.container
+						.clients__inner
+							h2.h3.clients__header В&nbsp;числе клиентов более <span class="highlight">180</span>&nbsp;компаний
+							.clients__list
+								.clients__item 	
+									svg 
+										use(xlink:href="#icon-online-store")
+									| Интернет-магазины
+								.clients__item 	
+									svg 
+										use(xlink:href="#icon-marketplace")
+									| Поставщики в&nbsp;маркетплейсы
+								.clients__item 	
+									svg 
+										use(xlink:href="#icon-provider")
+									| Провайдеры
+				.clients__block
+					.clients__container.container
+						.clients__inner
+							.clients__text
+								p Последние годы «Рентсофт» уделяет особое внимание интеграционным работам с&nbsp;маркетплейсами для&nbsp;осуществления розничных продаж с&nbsp;любого уровня бизнеса. Работы по&nbsp;интеграции включали в&nbsp;себя настройку на&nbsp;стороне маркетплейсов, а&nbsp;также интеграцию с&nbsp;учетными системами компании.
+								p Мы всегда исследуем рынок прежде чем начать работы и&nbsp;настраиваем бизнес-процессы в&nbsp;соответствии с&nbsp;результатами проведенных исследований.
+							button(data-src="form", aria-label="Оставить заявку").btn Оставить заявку

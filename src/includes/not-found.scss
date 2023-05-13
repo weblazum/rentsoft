@@ -1,0 +1,37 @@
+.not-found-page {
+	main {
+		background: linear-gradient(180deg, rgba(3, 18, 41, 0.3) 0%, rgba(3, 18, 41, 0.6) 100%),
+			url("../images/not-found.webp") 35% 100% / cover no-repeat;
+		background-color: var(--color-blue);
+		display: flex;
+		flex-grow: 1;
+		flex-direction: column;
+	}
+	.not-found {
+		color: var(--color-white);
+		padding: 30px 0;
+		min-height: 100%;
+		display: flex;
+		flex-grow: 1;
+	}
+	.not-found__inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: 560px;
+		margin: 0 auto;
+		gap: 168px;
+		min-height: 100%;
+	}
+	.not-found__header {
+		text-align: center;
+	}
+	.not-found__text {
+		font-size: 20px;
+	}
+	.not-found__link {
+		display: block;
+		color: var(--color-white);
+		opacity: 0.5;
+	}
+}

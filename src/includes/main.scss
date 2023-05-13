@@ -1,0 +1,152 @@
+.main-page {
+	.top {
+		background: linear-gradient(90deg, rgba(3, 18, 41, 1) 0%, rgba(3, 18, 41, 0.3) 100%),
+			url("../images/banner.webp") right 20% top 0 / cover no-repeat;
+		background-color: var(--color-black);
+		color: var(--color-white);
+		padding: 120px 0 120px;
+		margin: -70px 0 0 0;
+	}
+
+	.top__header {
+		margin: 0 0 30px;
+	}
+
+	.top__subheader {
+		margin: 0 0 100px;
+		max-width: 236px;
+	}
+
+	.about {
+		padding: 40px 0;
+		overflow-x: hidden;
+	}
+
+	.about__container {
+		width: 100%;
+	}
+
+	.about__header {
+		margin: 0 0 20px;
+	}
+
+	.about__header a {
+		color: var(--color-black);
+	}
+
+	.about__inner {
+		position: relative;
+	}
+
+	.about__text {
+	}
+
+	.about__text p {
+		max-width: 680px;
+	}
+
+	.about__image {
+		display: none;
+	}
+
+	.about .arrow {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 6px 0 0;
+	}
+
+	.services {
+		background-color: var(--color-black);
+		color: var(--color-white);
+		padding: 50px 0;
+	}
+
+	.services__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(140px, 192px));
+		gap: 40px;
+		justify-content: center;
+	}
+
+	.services__item {
+		display: block;
+		text-align: center;
+	}
+
+	.services__icon {
+		display: block;
+		width: 50px;
+		height: 50px;
+		margin: 0 auto 15px;
+	}
+
+	.projects {
+		padding: 40px 0 20px;
+	}
+
+	.projects__header {
+		margin: 0 0 40px;
+	}
+
+	.projects__list {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.projects__link {
+		display: block;
+		width: 100%;
+		// margin: 0 0 20px;
+		position: relative;
+	}
+
+	.projects__link svg {
+		width: 36px;
+		height: 26px;
+	}
+
+	.projects__logo {
+		margin: 0 0 20px;
+		max-width: 235px;
+	}
+
+	.projects__text {
+		margin: 0;
+		color: var(--color-black);
+	}
+
+	.projects .arrow {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 4px 0 0 0;
+	}
+
+	.contacts {
+		padding: 20px 0 70px;
+	}
+
+	.contacts__header {
+		margin: 0 0 20px;
+	}
+	.contacts__item {
+		margin: 0 0 30px;
+	}
+	.contacts__item span {
+		color: var(--color-dark-grey);
+		margin: 0 0 5px;
+		display: block;
+	}
+
+	.contacts__item a {
+		color: var(--color-black);
+		transition: color 0.2s;
+	}
+
+	.contacts__item a:hover {
+		color: var(--color-blue);
+		transition: color 0.2s;
+	}
+}

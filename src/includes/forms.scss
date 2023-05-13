@@ -1,0 +1,92 @@
+#form {
+	display: none;
+	padding: 80px var(--frame-padding-mob) 64px;
+	background-color: var(--color-black);
+	color: var(--color-white);
+	background: linear-gradient(90deg, rgba(3, 18, 41, 0.98) 40%, rgba(3, 18, 41, 0.5) 100%),
+		url("../images/services-background.webp") center / cover no-repeat;
+	// max-width: 796px;
+	width: 100%;
+	.form__container {
+		max-width: 636px;
+		margin: 0 auto;
+	}
+
+	.form__title {
+		font-weight: 400;
+		margin: 0 0 30px;
+	}
+
+	.form__text {
+		margin: 0 0 50px;
+	}
+	.form__register {
+		margin: 0 0 50px;
+	}
+	.form__group {
+		position: relative;
+		margin: 0 0 42px;
+	}
+	.form__input,
+	.form__textarea {
+		position: relative;
+		background: transparent;
+		outline: 0;
+		border: 0;
+		border-bottom: 1px solid var(--color-blue);
+		width: 100%;
+		color: var(--color-white);
+		padding: 0 0 8px;
+		min-height: 25px;
+		margin: 0 0 8px;
+		transition: 0.2s;
+		&:focus {
+			border-bottom: 1px solid var(--color-blue);
+		}
+		&::placeholder {
+			opacity: 0;
+		}
+	}
+	.js-validate-error-field {
+		border: none !important;
+		border-bottom: 1px solid var(--color-red) !important;
+		color: var(--color-white) !important;
+		transition: 0.2s;
+	}
+	.js-validate-error-label {
+		// position: absolute;
+		// top: 38px;
+		// left: 0;
+		font-size: 16px;
+		transition: 0.2s;
+	}
+	.form__textarea {
+		max-height: 180px;
+		height: 35px;
+		min-height: 35px;
+		margin: 0 0 8px;
+	}
+	.form__label {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		transition: top 0.3s, color 0.3s, font-size 0.3s;
+	}
+	.form__input:focus ~ .form__label,
+	.form__input:not(:placeholder-shown) ~ .form__label,
+	.form__textarea:focus ~ .form__label,
+	.form__textarea:not(:placeholder-shown) ~ .form__label {
+		top: -20px;
+		font-size: 14px;
+		color: var(--color-white);
+	}
+	.fancybox-close-small {
+		width: 80px;
+		height: 80px;
+		transition: 0.2s;
+	}
+	.fancybox-close-small:hover {
+		transition: 0.2s;
+	}
+}

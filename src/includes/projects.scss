@@ -1,0 +1,74 @@
+.projects-page {
+	.projects {
+		padding: 40px 0 15px;
+	}
+	.positronica {
+		padding: 15px 0 20px;
+	}
+	.positronica__row:first-child {
+		.positronica__content p,
+		.positronica__content img {
+			margin: 0 auto 30px;
+		}
+		.image-container {
+			text-align: center;
+		}
+		.positronica__logo {
+			max-width: 192px;
+			margin: 0 0 20px;
+		}
+		.positronica__image {
+			display: none;
+		}
+		.positronica__progress {
+			text-align: center;
+			font-size: 18px;
+		}
+		.progress-item {
+			max-width: 256px;
+			font-weight: 700;
+			margin: 0 auto 30px auto;
+		}
+	}
+	.positronica__row:nth-child(2) {
+		.positronica__content {
+			background-color: var(--color-black);
+			color: var(--color-white);
+			padding: 30px 0;
+		}
+	}
+	.marketplaces {
+		padding: 20px 0 70px;
+	}
+	.marketplaces__row:first-child {
+		margin: 0 0 30px;
+		.marketplaces__image {
+			display: none;
+		}
+		.marketplaces__content p {
+			margin: 0 auto 30px;
+			&:last-child {
+				margin: 0 auto;
+			}
+		}
+		.marketplaces__logo {
+			max-width: 192px;
+			margin: 0 0 20px;
+		}
+	}
+	.marketplaces__row:nth-child(2) {
+		.marketplaces__column:first-child {
+			background-color: var(--color-black);
+			color: var(--color-white);
+			padding: 20px 0;
+			text-align: center;
+			margin: 0 0 30px;
+		}
+		.marketplaces__goal {
+			max-width: 226px;
+			font-size: 18px;
+			// font-weight: 700;
+			margin: 0 auto;
+		}
+	}
+}

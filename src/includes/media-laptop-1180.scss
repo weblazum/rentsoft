@@ -1,0 +1,189 @@
+@media (min-width: 1180px) {
+	.container {
+		max-width: calc(var(--frame-width-max) + (var(--frame-padding-max) * 2));
+	}
+	.main-page {
+		.about {
+			overflow: hidden;
+		}
+		.about__inner {
+			width: 40%;
+		}
+		.about__image {
+			flex: 0 0 calc(((100vw - (var(--frame-padding-max) * 2)) * 0.6) + var(--frame-padding-max));
+		}
+
+		.projects__link {
+			gap: 118px;
+		}
+
+		.projects__logo {
+			max-width: 326px;
+		}
+		.contacts__list {
+			max-width: 85%;
+		}
+	}
+	.about-page {
+		.company__inner {
+			width: 40%;
+		}
+		.company__image {
+			flex: 0 0 calc(((100vw - (var(--frame-padding-max) * 2)) * 0.6) + var(--frame-padding-max));
+		}
+		.clients__inner {
+			max-width: calc((var(--frame-width-max) / 2) - (var(--frame-padding-max)));
+		}
+	}
+	.contacts-page {
+		.contacts__list {
+			gap: 80px;
+		}
+		.contacts__item {
+			min-width: 260px;
+		}
+	}
+	.projects-page {
+		.positronica__row:first-child {
+			margin: 0 0 100px;
+			.positronica__image {
+				display: block;
+				flex: 0 0 50%;
+				padding: 0 calc(var(--frame-padding-max) + 30px) 0 0;
+			}
+			.image-container {
+				display: none;
+			}
+			.positronica__inner {
+				display: flex;
+			}
+			.positronica__content {
+				flex: 0 0 50%;
+			}
+			.positronica__progress {
+				font-size: 30px;
+				justify-content: space-between;
+				gap: 30px;
+			}
+			.progress-item {
+				max-width: 192px;
+			}
+		}
+		.positronica__row:nth-child(2) {
+			display: flex;
+			.positronica__content {
+				align-items: center;
+				display: flex;
+				flex: 0 0 50%;
+			}
+			.positronica__container {
+				margin: 0 0 0 auto;
+			}
+			.positronica__inner {
+				max-width: calc((var(--frame-width-max) / 2) - (var(--frame-padding-max)));
+				// padding: 0 30px 0 0;
+				margin: 0 0 0 auto;
+			}
+			.positronica__image {
+				flex: 0 0 50%;
+				position: relative;
+			}
+			.positronica__image picture,
+			.positronica__image img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				object-fit: cover;
+				object-position: 50% 0;
+				height: 100%;
+				width: 100%;
+			}
+		}
+		.marketplaces__row:first-child {
+			margin: 0 0 100px;
+			display: flex;
+			.marketplaces__content {
+				display: flex;
+				align-items: center;
+				flex: 0 0 50%;
+			}
+			.marketplaces__container {
+				padding: 0 var(--frame-padding-max) 0 0;
+				margin: 0 auto 0 0;
+			}
+			.marketplaces__inner {
+				max-width: calc((var(--frame-width-max) / 2));
+			}
+			.marketplaces__image {
+				display: block;
+				flex: 0 0 50%;
+				position: relative;
+				transform: translateX(-calc(var(--frame-padding-max) + 30px));
+				min-height: 420px;
+			}
+			.marketplaces__image picture,
+			.marketplaces__image img {
+				position: absolute;
+				object-fit: cover;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				padding: 0 calc(var(--frame-padding-max) + 30px) 0 0;
+			}
+		}
+		.marketplaces__row:nth-child(2) {
+			display: flex;
+			overflow: hidden;
+			.marketplaces__column {
+				flex: 0 0 50%;
+			}
+			.marketplaces__column:first-child {
+				transform: translateX(calc((var(--frame-padding-max) + 30px) * -1));
+				text-align: left;
+				margin: 0;
+			}
+			.marketplaces__goal {
+				max-width: 526px;
+				margin: 0 0 0 auto;
+				padding: 0 calc(var(--frame-padding-max) + 30px) 0 0;
+				transform: translateX(calc(var(--frame-padding-max) + 30px));
+			}
+			.marketplaces__column:nth-child(2) {
+				display: flex;
+				align-items: center;
+				.marketplaces__container {
+					padding: 0 var(--frame-padding-max) 0 0;
+					margin: 0 auto 0 0;
+				}
+			}
+			.marketplaces__text {
+				max-width: calc((var(--frame-width-max) / 2));
+			}
+		}
+	}
+
+	.footer__content {
+		justify-content: space-between;
+		gap: 80px;
+	}
+
+	.footer .nav {
+		flex: 0 1 70%;
+	}
+
+	.footer .nav__list {
+		justify-content: center;
+	}
+
+	#form {
+		padding: var(--frame-padding-max);
+	}
+}
+@media (min-width: 1280px) {
+	.main-page .about__image,
+	.about-page .company__image {
+		flex: 0 0 calc(50vw - (0.4 - 0.5) * (var(--frame-width-max) - var(--frame-padding-max) * 2));
+	}
+}

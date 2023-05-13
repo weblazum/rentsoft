@@ -1,0 +1,16 @@
+extends includes/base
+block vars
+	-var pageName = 'not-found-page'
+	-var pageTitle = 'Страницы не найдена | RentSoft'
+	-var pageDescription = 'Такой страницы не существует'
+	-var pageKeywords = 'RentSoft'
+block content
+		main.main
+			section.not-found
+				.not-found__container.container
+					.not-found__inner 
+						.not-found__header
+							h1 Ошибка!
+						.not-found__text
+							span Такая страница не&nbsp;найдена. 
+							a(href="index.html" class="not-found__link") Перейти на&nbsp;главную страницу

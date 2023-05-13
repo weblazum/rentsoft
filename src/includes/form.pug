@@ -1,0 +1,20 @@
+.form#form
+	.form__container
+		h2.form__title Оставить заявку на&nbsp;консультацию
+		p.form__text Все поля обязательны для&nbsp;заполнения
+		form(action="#" method='POST' enctype='multipart/form-data' class="form__register")
+			fieldset.form__group
+				input.form__input(type="text", placeholder=" ", id="form__name", data-validate-field="name", autocomplete="off", name="Имя" )
+				label.form__label(for="form__name") Имя
+			fieldset.form__group
+				input.form__input(type="tel", placeholder=" ", id="form__number", data-validate-field="tel", autocomplete="off", name="Телефон" )
+				label.form__label(for="form__number") Телефон
+			fieldset.form__group
+				input.form__input(type="mail", placeholder=" ", id="form__email", data-validate-field="email", autocomplete="off", name="E-mail" )
+				label.form__label(for="form__email") E-mail
+			fieldset.form__group
+				textarea.form__textarea(placeholder=" ", id="form__task", data-validate-field="task", autocomplete="off")
+				label.form__label(for="form__task") Ваша задача	
+			fieldset.form__group
+				input(type="submit" id="form__submit", value="Оставить заявку", aria-label="Оставить заявку").form__btn.submit-btn.btn
+		p.form__policy Нажимая кнопку, вы соглашаетесь с&nbsp;нашей <a href="policy.html">политикой обработки персональных данных</a>

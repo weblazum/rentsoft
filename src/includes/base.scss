@@ -1,0 +1,252 @@
+:root {
+	--color-black: #031229;
+	--color-white: #ffffff;
+	--color-grey: #f1f1f1;
+	--color-dark-grey: rgba(3, 18, 41, 0.6);
+	--color-blue: #1096d4;
+	--color-red: #f44336;
+	--frame-width-max: 1380px;
+	--frame-width-1024: 980px;
+	--frame-width-768: 860px;
+	--frame-padding-max: 50px;
+	--frame-padding-1024: 40px;
+	--frame-padding-768: 30px;
+	--frame-padding-mob: 20px;
+}
+
+@font-face {
+	font-family: "GothamPro";
+	font-display: swap;
+	src: url("../fonts/GothamProLight.ttf") format("truetype"), url("../fonts/GothamProLight.woff") format("woff"),
+		url("../fonts/GothamProLight.woff2") format("woff2"), url("../fonts/GothamProLight.eot") format("eot"),
+		url("../fonts/GothamProLight.svg") format("svg");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "GothamPro";
+	font-display: swap;
+	src: url("../fonts/GothamProRegular.ttf") format("truetype"), url("../fonts/GothamProRegular.woff") format("woff"),
+		url("../fonts/GothamProRegular.woff2") format("woff2"), url("../fonts/GothamProRegular.eot") format("eot"),
+		url("../fonts/GothamProRegular.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "GothamPro";
+	font-display: swap;
+	src: url("../fonts/GothamProMedium.ttf") format("truetype"), url("../fonts/GothamProMedium.woff") format("woff"),
+		url("../fonts/GothamProMedium.woff2") format("woff2"), url("../fonts/GothamProMedium.eot") format("eot"),
+		url("../fonts/GothamProMedium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "GothamPro";
+	font-display: swap;
+	src: url("../fonts/GothamProBold.ttf") format("truetype"), url("../fonts/GothamProBold.woff") format("woff"),
+		url("../fonts/GothamProBold.woff2") format("woff2"), url("../fonts/GothamProBold.eot") format("eot"),
+		url("../fonts/GothamProBold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+html {
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "GothamPro", sans-serif;
+	font-weight: 400;
+	line-height: 1.3;
+	color: var(--color-black);
+	font-size: 16px;
+	min-width: 320px;
+	max-width: 1920px;
+	margin: 0 auto;
+	background: #f1f1f1;
+	height: fit-content;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+h1,
+.h1 {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+h2,
+.h2 {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+h3 .h3 {
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 1.2;
+}
+
+p {
+	margin: 0 0 30px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-blue);
+}
+
+section {
+	overflow: hidden;
+}
+
+.overlay {
+	position: fixed;
+	left: 0;
+	top: 78px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 2;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0.2s, opacity 0.2s;
+}
+.overlay.visible {
+	visibility: visible;
+	opacity: 1;
+	transition: visibility 0.2s, opacity 0.2s;
+}
+
+.lock {
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+a:focus,
+a:active,
+a:visited {
+	outline: none;
+	border: none;
+}
+
+strong {
+	font-weight: 500;
+}
+
+button {
+	outline: none;
+	border: none;
+	background: transparent;
+	-webkit-tap-highlight-color: transparent;
+	cursor: pointer;
+}
+
+input {
+	background: transparent;
+	font-family: inherit;
+	line-height: inherit;
+}
+
+input[type="submit"] {
+	border: 0;
+	outline: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+	appearance: none;
+	-moz-appearance: textfield;
+}
+
+.container {
+	max-width: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 var(--frame-padding-mob);
+}
+
+main {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+	flex-grow: 1;
+	position: relative;
+	// overflow: hidden;
+}
+
+h1,
+.h1 {
+	font-size: 35px;
+}
+
+h2,
+.h2 {
+	font-size: 30px;
+}
+
+h3,
+.h3 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+p {
+	margin: 0 0 20px;
+}
+
+p:last-child {
+	margin: 0;
+}
+
+.btn {
+	color: var(--color-white);
+	background-color: var(--color-blue);
+	padding: 15px;
+	max-width: 324px;
+	width: 100%;
+	display: inline-block;
+	font-size: 18px;
+	transition: box-shadow 0.2s;
+}
+
+.arrow {
+	width: 36px;
+	height: 26px;
+	display: flex;
+	flex-shrink: 0;
+	background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='26' viewBox='0 0 36 26' fill='none'%3E%3Cpath d='M2 12.952h30.784M21.832 2l10.952 10.952-10.952 10.952' stroke='%23031229' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E")
+		0 / 36px 26px no-repeat;
+	transition: background 0.3s ease;
+}
+
+.highlight {
+	color: var(--color-blue);
+}
+
+.fancybox-slide--html {
+	padding: 0;
+}

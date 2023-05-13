@@ -1,0 +1,25 @@
+extends includes/base
+block vars
+	-var pageName = 'contacts-page'
+	-var pageTitle = 'Контакты | RentSoft'
+	-var pageDescription = 'МО, Красногорский район, г. Красногорск, бульвар Строителей, д. 4, корп. 1'
+	-var pageKeywords = 'RentSoft'
+block content
+		main.main
+			section.contacts
+				.contacts__container.container
+					.contacts__content
+						h1.h2.contacts__header Контакты 
+						ul.contacts__list
+							li.contacts__item
+								span Адрес:
+								p МО, Красногорский район, г.&nbsp;Красногорск, бульвар Строителей, д.&nbsp;4, корп.&nbsp;1
+							li.contacts__item
+								span Телефон:
+								p 
+									a(href="tel:74956685021") +7&nbsp;(495)&nbsp;668-50-21
+							li.contacts__item
+								span E-mail:
+								p 
+									a(href="mailto:office@rentsoft.ru") office@rentsoft.ru
+						.contacts__map#map

@@ -1,0 +1,85 @@
+extends includes/base
+block vars
+	-var pageName = 'main-page'
+	-var pageTitle = 'RentSoft — ИТ-решения для бизнеса в сфере ритейла'
+	-var pageDescription = 'Разработка ПО. Интеграция. Продвижение'
+	-var pageKeywords = 'RentSoft'
+block content
+		main.main
+			section.top
+				.container
+					.top__inner
+						h1.top__header ИТ-решения для&nbsp;бизнеса<br>в&nbsp;сфере ритейла
+						h2.top__subheader.h3 Разработкa ПО. Интеграция. Продвижение
+						button(data-src="form", aria-label="Оставить заявку").top__btn.btn Оставить заявку
+			section.about
+				.about__content.animated.animated-visible
+					.about__container.container
+						.about__inner
+							.about__text
+								h2.about__header
+									a(href="about.html") О&nbsp;компании
+								p Российская ИТ-компания, предлагающая широкий спектр услуг по&nbsp;созданию и&nbsp;продвижению интернет-магазинов, внедрению и&nbsp;интеграции сопутствующих информационных систем, а&nbsp;также поставкам программного обеспечения и&nbsp;оборудования для&nbsp;розничной торговли.
+							a(href="about.html", aria-hidden="true").arrow
+				.about__image
+					picture.animated.animated-visible
+						source(srcset="images/rentsoft-about-01.webp" type="image/webp")
+						img(src="images/rentsoft-about-01.jpg" alt="О компании" aria-hidden="true")
+			section.services.animated.animated-visible
+				.container
+					.services__content 	
+						ul.services__list.animated.animated-visible
+							li.services__item
+								svg.services__icon(aria-hidden="true")
+									use(xlink:href="#icon-crm")
+								| Внедрение CRM систем
+							li.services__item
+								svg.services__icon(aria-hidden="true")
+									use(xlink:href="#icon-delivery")
+								| Поставки ПО и&nbsp;оборудования
+							li.services__item
+								svg.services__icon(aria-hidden="true")
+									use(xlink:href="#icon-development")
+								| Разработкa ПО: магазины, сервисы
+							li.services__item
+								svg.services__icon(aria-hidden="true")
+									use(xlink:href="#icon-consalt")
+								| Консалтинговые услуги
+							li.services__item
+								svg.services__icon(aria-hidden="true")
+									use(xlink:href="#icon-promotion")
+								| Продвижение
+			section.projects
+				.projects__container.container
+					.projects__content
+						h2.projects__header.animated.animated-visible Проекты и&nbsp;решения компании
+						ul.projects__list
+							li.projects__item.animated.animated-visible
+								a(href="projects.html#positronica").projects__link
+									img(src="images/positronica-logo.svg", alt="Позитроника").projects__logo
+									p.projects__text 
+										| Интернет-магазин и&nbsp;платформa розничных продаж для&nbsp;федеральной сети магазинов электроники
+									span.arrow(aria-hidden="true")
+							li.projects__item.animated.animated-visible
+								a(href="projects.html#marketplaces").projects__link
+									img(src="images/marketplaces-logo.svg", alt="Marketplaces").projects__logo
+									p.projects__text 
+										| Быстрая интеграция с&nbsp;маркетплейсами для&nbsp;бизнесa любого масштаба. Собственная разработка.
+									span.arrow(aria-hidden="true")
+			section.contacts
+				.contacts__container.container
+					.contacts__content
+						h2.contacts__header.animated.animated-visible Контакты 
+						ul.contacts__list.animated.animated-visible
+							li.contacts__item
+								span Адрес:
+								p МО, Красногорский район, г.&nbsp;Красногорск, бульвар Строителей, д.&nbsp;4, корп.&nbsp;1
+							li.contacts__item
+								span Телефон:
+								p 
+									a(href="tel:74956685021") +7&nbsp;(495)&nbsp;668-50-21
+							li.contacts__item
+								span E-mail:
+								p 
+									a(href="mailto:office@rentsoft.ru") office@rentsoft.ru
+						.contacts__map#map.animated.animated-visible

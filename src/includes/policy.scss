@@ -1,0 +1,25 @@
+.policy-page {
+	h1,
+	h2,
+	h3 {
+		margin: 0 0 30px;
+	}
+	ol,
+	ul {
+		margin: 0;
+		padding: 0 0 0 20px;
+	}
+
+	ol {
+		list-style-type: decimal;
+	}
+	li {
+		padding: 10px 0;
+	}
+	p {
+		margin: 0 0 20px;
+	}
+	.policy {
+		padding: 50px 0;
+	}
+}

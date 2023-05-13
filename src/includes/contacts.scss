@@ -1,0 +1,21 @@
+.contacts-page {
+	.contacts {
+		padding: 40px 0 70px;
+	}
+	.contacts__header {
+		margin: 0 0 30px;
+	}
+	.contacts__list {
+		margin: 0 0 40px;
+	}
+	.contacts__item {
+		margin: 0 0 20px;
+	}
+	.contacts__item span {
+		color: var(--color-dark-grey);
+		margin: 0 0 5px;
+	}
+	.contacts__item a {
+		color: var(--color-black);
+	}
+}

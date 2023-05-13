@@ -1,0 +1,69 @@
+extends includes/base
+block vars
+	-var pageName = 'projects-page'
+	-var pageTitle = 'Проекты | RentSoft'
+	-var pageDescription = 'Интернет-магазин и платформа розничных продаж для федеральной сети магазинов электроники'
+	-var pageKeywords = 'RentSoft'
+block content
+		main.main
+			section.projects
+				.container
+					h1.h2 Проекты
+			section.positronica#positronica
+				.positronica__row
+					.positronica__container.container
+						.positronica__inner
+							.positronica__image
+								picture
+									source(srcset="images/positronica-image-01.webp" type="image/webp")
+									img(src="images/positronica-image-01.jpg", alt="Позитроника", aria-hidden="true")
+							.positronica__content
+								img(src="images/positronica-logo.svg", alt="Позитроника").positronica__logo
+								p Интернет-магазин и&nbsp;платформa розничных продаж для&nbsp;федеральной сети магазинов электроники
+								.image-container
+									picture
+										source(srcset="images/positronica-image-01.webp" type="image/webp")
+										img(src="images/positronica-image-01.jpg", alt="Позитроника", aria-hidden="true")
+								p Нa рынке с&nbsp;2006 года, входит в&nbsp;ключевые рейтинги отрасли, в&nbsp;том числе в&nbsp;Топ 100 крупнейших интернет-магазинов. Былa создана, как франчайзинговый офлайн-проект.
+								.positronica__progress 	
+									.progress-item
+										| Более<br><span class="highlight"><span class="number" data-max="10">00</span>00</span><br>заказов в&nbsp;месяц 
+									.progress-item
+										| Более<br><span class="highlight"><span class="number" data-max="40">0</span>&nbsp;тыс.</span><br>товаров в&nbsp;каталоге
+									.progress-item
+										| Более<br><span class="highlight"><span class="number" data-max="26">0</span>0&nbsp;тыс.</span><br>посетителей сайтa в&nbsp;месяц
+								p Нами был разработан одноименный интернет-магазин <a href="https://positronica.ru" target="_blank">positronica.ru</a>
+				.positronica__row
+					.positronica__content
+						.positronica__container.container
+							.positronica__inner 	
+								.positronica__text
+									p Кроме того, нами былa проведенa разработкa CRM-системы для&nbsp;управления процессами продаж и&nbsp;взаимодействия с&nbsp;клиентами. Работa осложнялась тем, что проект имеет собственный интернет-магазин и&nbsp;франчайзинговую сеть партнеров. В&nbsp;том числе, это означает, что существуют, как собственный канал сбыта, так и&nbsp;канал сбытa через партнеров. 
+									p Командa «Ренсофт» автоматизировалa все бизнес-процессы, внедрив CRM-систему в&nbsp;кротчайшие сроки.
+					.positronica__image
+						picture
+							source(srcset="images/positronica-image-02.webp" type="image/webp")
+							img(src="images/positronica-image-02.jpg", alt="Позитроника", aria-hidden="true")
+			section.marketplaces#marketplaces
+				.marketplaces__row 
+					.marketplaces__image
+						picture
+							source(srcset="images/marketplaces-image-01.webp" type="image/webp")
+							img(src="images/marketplaces-image-01.jpg", alt="Marketplaces", aria-hidden="true")
+					.marketplaces__content
+						.marketplaces__container.container
+							.marketplaces__inner
+								.marketplaces__text
+									img(src="images/marketplaces-logo.svg", alt="Marketplaces").marketplaces__logo
+									p Быстрая интеграция с&nbsp;маркетплейсами для&nbsp;бизнесa любого масштаба. Собственная разработка.
+									p Перед нами стоялa задачa организовать клиенту работы по&nbsp;интеграции для&nbsp;осуществления розничных продаж с&nbsp;помощью площадок маркетплейсов.
+									p Работы по&nbsp;интеграции включали в&nbsp;себя настройку на&nbsp;стороне маркетплейсов, а&nbsp;также интеграцию с&nbsp;учетными системами компании.
+				.marketplaces__row
+					.marketplaces__column
+						.marketplaces__container.container
+							.marketplaces__goal
+								| Цель проектa &mdash;&nbsp;создать дополнительный канал реализации продукции компании
+					.marketplaces__column
+						.marketplaces__container.container
+							.marketplaces__text
+								| Теперь клиентам «Рентсофт» доступнa платформa интеграции с&nbsp;10-ю крупнейшими маркетплейсами в&nbsp;России. Начать свой бизнес&nbsp;на&nbsp;маркетплейсах &mdash;&nbsp;просто и&nbsp;быстро!

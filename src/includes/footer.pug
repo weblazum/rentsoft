@@ -1,0 +1,22 @@
+footer.footer 
+	.container 
+		.footer__content 	
+			a.footer__logo(href="index.html")
+				img(src="images/logo.svg", alt="RentSoft")
+			nav.nav
+				ul.nav__list
+					li.nav__item
+						if pageName === "about-page"
+							a.nav__link.nav__link--active О&nbsp;компании
+						else
+							a.nav__link(href="about.html") О&nbsp;компании
+					li.nav__item
+						if pageName === "projects-page"
+							a.nav__link.nav__link--active Проекты
+						else
+							a.nav__link(href="projects.html") Проекты
+					li.nav__item
+						if pageName === "contacts-page"
+							a.nav__link.nav__link--active Контакты
+						else
+							a.nav__link(href="contacts.html") Контакты
