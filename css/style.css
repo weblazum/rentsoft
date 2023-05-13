@@ -900,27 +900,27 @@ p:last-child {
   opacity: 0.5;
 }
 
-.policy-page h1,
-.policy-page h2,
-.policy-page h3 {
+.policy-page .policy {
+  padding: 50px 0;
+}
+.policy-page .policy__text h1,
+.policy-page .policy__text h2,
+.policy-page .policy__text h3 {
   margin: 0 0 30px;
 }
-.policy-page ol,
-.policy-page ul {
+.policy-page .policy__text ol,
+.policy-page .policy__text ul {
   margin: 0;
   padding: 0 0 0 20px;
 }
-.policy-page ol {
+.policy-page .policy__text ol {
   list-style-type: decimal;
 }
-.policy-page li {
+.policy-page .policy__text li {
   padding: 10px 0;
 }
-.policy-page p {
+.policy-page .policy__text p {
   margin: 0 0 20px;
-}
-.policy-page .policy {
-  padding: 50px 0;
 }
 
 @media (min-width: 768px) {
